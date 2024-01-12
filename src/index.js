@@ -13,7 +13,8 @@ import "./common/css/slick.css";
 import Home from "./components/Home/Home";
 
 import Ongoing from "./components/Home/Ongoing";
-import Consumer from "./components/Home/Consumer";
+import Businesssignup from "./components/Home/Businesssignup";
+import Emailverify from "./components/Home/Emailverify";
 
 import Refpage from "./components/Layout/Refpage";
 import Page404 from "./Page404";
@@ -29,7 +30,8 @@ root.render(
         <Route exact path="/" component={Home} />
 
         <Route exact path="/on-going" component={Ongoing} />
-        <Route exact path="/consumer" component={Consumer} />
+        <Route exact path="/bsignup" component={Businesssignup} />
+        <Route exact path="/email-verify" component={Emailverify} />
 
         {/*  Client Panel Start*/}
         <Route path={"/refpage/:slugtext"} component={Refpage} />
